@@ -1,0 +1,83 @@
+package prasanna;
+import java.util.Scanner;
+public class Hotelmanagement {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int bill=0;
+		if(true) {
+			System.out.println("welcome to the Hotel");
+			System.out.println("1.Biryani=250Rs\n2.Rumal Roti=100Rs\n3.PaneerButterMasala=265Rs\n4.Icecreams=50Rs\n5Softdrinks=90Rs");
+			System.out.println("Enter your option:");
+			int op=sc.nextInt();
+			switch(op) {
+			case 1:
+				System.out.println("Biryani");
+				System.out.println("enter quantity");
+				int q=sc.nextInt();
+				bill+=q*250;
+				System.out.println("Rumal Roti");
+				System.out.println("enter quantity");
+				int q1=sc.nextInt();
+				bill+=q1*100;
+				System.out.println("Rumal Roti cost"+bill);
+				break;
+			case 3:
+				System.out.println("PaneerButterMasala");
+				System.out.println("enter quantity");
+				int q2=sc.nextInt();
+				bill+=q2*265;
+				System.out.println("PaneerButterMasalacost"+bill);
+				break;
+			case 4:
+				System.out.println("Icecreams");
+				System.out.println("enter quantity");
+				int q3=sc.nextInt();
+				bill+=q3*50;
+				System.out.println("Icecream cost"+bill);
+				break;	
+			case 5:
+				System.out.println("Softdrinks");
+				System.out.println("enter quantity");
+				int q4=sc.nextInt();
+				bill+=q4*90;
+				System.out.println("Softdriinks cost"+bill);
+				break;	
+				default:
+					System.out.println("No option selected");
+			
+		
+			}
+		}
+      System.out.println("Thank You visit again");
+
+	}
+
+}
+
+
+output:
+welcome to the Hotel
+1.Biryani=250Rs
+2.Rumal Roti=100Rs
+3.PaneerButterMasala=265Rs
+4.Icecreams=50Rs
+5Softdrinks=90Rs
+Enter your option:
+0
+No option selected
+Thank You visit again
+welcome to the Hotel
+1.Biryani=250Rs
+2.Rumal Roti=100Rs
+3.PaneerButterMasala=265Rs
+4.Icecreams=50Rs
+5Softdrinks=90Rs
+Enter your option:
+4
+Icecreams
+enter quantity
+6
+Icecream cost300
+Thank You visit again
+
